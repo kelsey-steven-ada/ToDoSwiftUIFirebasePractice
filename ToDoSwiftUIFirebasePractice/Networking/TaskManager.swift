@@ -58,8 +58,8 @@ class TaskManager: ObservableObject {
             return
         }
         
-        // Create a new Task instance with a unique ID,
-        // the text we passed, & isComplete value of false
+        // Create a new Task instance with the text parameter
+        // and an isComplete value of false
         let newTask = Task(
             text: text,
             isComplete: false
