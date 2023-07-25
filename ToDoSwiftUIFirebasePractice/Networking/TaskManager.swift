@@ -33,7 +33,7 @@ class TaskManager: ObservableObject {
             // Map the documents to our Task model
             self.tasks = documents.compactMap { document -> Task? in
                 do {
-                    // Converting each document into the Message model
+                    // Converting each document into the Task model
                     // Note that data(as:) is a function available only in the
                     // FirebaseFirestoreSwift package - remember to import it at the top
                     return try document.data(as: Task.self)

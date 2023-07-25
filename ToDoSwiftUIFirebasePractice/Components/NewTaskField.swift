@@ -13,6 +13,8 @@ struct NewTaskField: View {
     
     var body: some View {
         HStack {
+            // We pass empty functions for the callbacks since we don't
+            // want to trigger actions from the text field
             TextField(
                 "Type a new task here",
                 text: $newTask,
