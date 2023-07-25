@@ -25,8 +25,10 @@ struct NewTaskField: View {
             .disableAutocorrection(true)
             
             Button {
+                // Make the network call and clear our state var
                 taskManager.addTask(text: newTask)
                 newTask = ""
+                
             } label: {
                 Image(systemName: "paperplane.fill")
                     .foregroundColor(.white)
